@@ -4,6 +4,7 @@ void main()
 int n,rem,l;
 	int sum=0;
 	scanf("%d",&n);
+	if(n<=100000)
 	l=n;
 	while(n>0)
 	{
