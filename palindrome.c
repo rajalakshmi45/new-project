@@ -14,4 +14,6 @@ sum=sum*10+rem;
 }
 if(i==sum)
 printf("yes");
+  else
+    printf("no");
 }
