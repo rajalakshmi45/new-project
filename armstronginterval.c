@@ -1,18 +1,23 @@
-	#include<stdio.h>
-  void main()
-  {
-  int n,m,rem,i;
+	#include <stdio.h>
+
+void main() {
+	// your code goes here
+	int m,n,i,s,rem;
 	int sum=0;
-	scanf("%d\t%d",&n,&m);
-	for(i=n+1;i<m;i++)
+	scanf("%d\t%d",&m,&n);
+	for(i=m+1;i<n;i++)
 	{
-		while(i!=0)
+		s=i;
+		int x=i;
+                        sum=0;
+ 		while(x>0)
 		{
-			rem=i%10;
+		            rem=x%10;
 			sum=sum+rem*rem*rem;
-			i=i/10;
+			x=x/10;
 		}
-		if(i==sum)
+	            if(sum==s)
 		printf("%d",sum);
 	}
-  }
+	
+}
