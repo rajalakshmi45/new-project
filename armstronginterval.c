@@ -1,22 +1,23 @@
-	#include <stdio.h>
-
-void main() {
-	int m,n,i,s,rem;
-	int sum=0;
-	scanf("%d\t%d",&m,&n);
-	for(i=m+1;i<n;i++)
+#include<stdio.h>
+void main()
+{
+	int n,i,l;
+	static int s;
+	int count=0;
+	scanf("%d",&n);
+	for(i=1;i<n;i++)
 	{
-		s=i;
-		int x=i;
-                        sum=0;
- 		while(x>0)
+		if((n%i)==0)
 		{
-		            rem=x%10;
-			sum=sum+rem*rem*rem;
-			x=x/10;
+			s=++count;
 		}
-	            if(sum==s)
-		printf("%d",sum);
+	  
+	}
+	printf("%d",s);
+	 if(s>2)
+	printf("no");
+	else
+	printf("yes");
+	
 	}
 	
-}
