@@ -1,7 +1,6 @@
 	#include <stdio.h>
 
 void main() {
-	// your code goes here
 	int m,n,i,s,rem;
 	int sum=0;
 	scanf("%d\t%d",&m,&n);
