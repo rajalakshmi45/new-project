@@ -1,21 +1,14 @@
-#include<stdio.h>
-
+#include <stdio.h>
 int main(void)
 {
-	int N,A,D,i=0;
+	int N,A,D,i;
+	int sum=0;
 	scanf("%d\t%d\t%d",&N,&A,&D);
 	for(i=A;0<N;i=i+D)
 	{
-		printf("%d\t",i);
+		sum=sum+i;
 		N--;
 	}
-	while(N>0)
-	{
-		i=A;
-		i=i+D;
-		N--;
-		A++;
-	}
-	printf("\n%d",i);
+	printf("%d",sum);
 	return 0;
 }
