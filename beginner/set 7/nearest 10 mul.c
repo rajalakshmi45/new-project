@@ -7,7 +7,7 @@ int main(void) {
  quo=n/10;
  if(n<=10000)
  {
- if(n<10)
+ if(n<=10)
  {
    printf("10");
  }
