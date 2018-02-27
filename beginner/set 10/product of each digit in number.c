@@ -3,6 +3,8 @@
 int main(void) {
   int n,i,rem,pro=1;
   scanf("%d",&n);
+  if(n<=100000000000)
+  {
   while(n>0)
   {
     rem=n%10;
@@ -10,5 +12,6 @@ int main(void) {
     n=n/10;
   }
   printf("%d",pro);
+  }
   return 0;
 }
