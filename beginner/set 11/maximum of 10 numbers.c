@@ -1,19 +1,19 @@
 #include "stdio.h"
 
 int main(void) {
-  int a[10],i,max;
+  int a[10],i,min;
   for(i=0;i<10;i++)
   {
     scanf("%d",&a[i]);
   }
-  max=a[0];
+  min=a[0];
   for(i=0;i<10;i++)
   {
-    if(max<a[i])
+    if(min>a[i])
     {
-      max=a[i];
+      min=a[i];
     }
   }
-  printf("%d",max);
+  printf("%d",min);
   return 0;
 }
