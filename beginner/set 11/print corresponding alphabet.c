@@ -1,11 +1,11 @@
 #include "stdio.h"
 
 int main(void) {
-  int n;
+  int N;
   char a;
-  scanf("%d",&n);
-  n=n+64;
-  a=n;
+  scanf("%d",&N);
+  N=N+64;
+  a=N;
   printf("%c",a);
   return 0;
 }
